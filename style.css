@@ -17,7 +17,7 @@ body{
 
 h2 {
     text-align: center; 
-    padding: 10px; 
+    padding: 5px; 
     color: #285FEC;
     font-size: 30px; 
 }
@@ -25,14 +25,14 @@ h2 {
 img {
  padding: 10px;  
 }
-.firstQ {
+#firstQ {
     text-align: center; 
     
 }
-.secondQ {
+#secondQ {
     text-align: center; 
 }
-.thirdQ {
+#thirdQ {
     text-align: center; 
 }
 
@@ -43,12 +43,39 @@ img:not(#result_img):hover {
 }
 
 input[type=radio]:checked ~img {
-    border: 15px solid #285FEC;
+    border: 10px solid #285FEC;
 
 }
 
 /* Suppress all Radio Inputs */
-/* input[type=radio] {
+input[type=radio] {
     display: none;
-} */
+}
+
+#submit {
+    display: flex;
+    justify-content: center; 
+    padding-top: 10px; 
+}
+
+button {
+    border: 0; 
+    background: gray;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    padding: 15px 30px;
+    transition: all .1s linear;
+}
+
+button:hover {
+    background: #285FEC;
+}
+
+#warning  {
+    display: none;
+    justify-content: center;
+    color: rgb(241, 81, 82);
+  }
 
