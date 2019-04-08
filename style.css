@@ -1,0 +1,54 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:white;
+    font-family: 'Chewy', cursive;
+    
+}
+.quizName {
+    padding: 20px; 
+    display: flex;
+    text-align: center;  
+    justify-content: center; 
+    font-size: 40px; 
+    background-image: url(images/What\ Type\ of\ Varsha\ Are\ You_.png);
+    color: #285FEC; 
+}
+
+h2 {
+    text-align: center; 
+    padding: 10px; 
+    color: #285FEC;
+    font-size: 30px; 
+}
+
+img {
+ padding: 10px;  
+}
+.firstQ {
+    text-align: center; 
+    
+}
+.secondQ {
+    text-align: center; 
+}
+.thirdQ {
+    text-align: center; 
+}
+
+img:not(#result_img):hover {
+    /* border: 10px solid #285FEC; */
+    box-shadow: 5px 5px 8px rgb(46, 46, 46);
+    cursor: pointer;
+}
+
+input[type=radio]:checked ~img {
+    border: 15px solid #285FEC;
+
+}
+
+/* Suppress all Radio Inputs */
+/* input[type=radio] {
+    display: none;
+} */
+

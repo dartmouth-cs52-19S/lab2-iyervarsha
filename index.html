@@ -1,23 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Buzzfeed Quiz: What Varsha Are You?</title>
+        <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>What Type of Varsha Are You?</h1>
+        <div class = "quizName">
+            <h1>What Kind of Varsha Are You?</h1>
+        </div>
+        
         <form>
-            <label>
-                <img src = "<iframe src="https://giphy.com/embed/l3M7smiKhkOcw" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tired-winnie-the-pooh-goodnight-l3M7smiKhkOcw">via GIPHY</a></p>">
-                <input type = "radio" name= "sleep" value = "10"> 10
-                <img src = "<iframe src="https://giphy.com/embed/HwmDZaI4YEeZ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tired-goodnight-nap-HwmDZaI4YEeZ2">via GIPHY</a></p>"
-                <input type = "radio" name= "sleep" value = "8"> 8
-                <img src ="<iframe src="https://giphy.com/embed/vjCkGbbSm7bhe" width="480" height="382" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sam-tired-monday-vjCkGbbSm7bhe">via GIPHY</a></p>">
-                <input type = "radio" name= "sleep" value = "5"> 5
-                <img src = "<iframe src="https://giphy.com/embed/xT8qBvH1pAhtfSx52U" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/baby-sleepy-face-first-xT8qBvH1pAhtfSx52U">via GIPHY</a></p>">
-                <input type = "radio" name= "sleep" value = "We don't Talk About It"> We don't Talk About It
-            </label>
-
+            <h2>How Much Sleep Do You Get On an Average Day?</h2>
+            <div class = "firstQ">
+                <label id = "q1" for = "10">
+                    <input type = "radio" id = "10" name = "sleep" value=1> 
+                    <!-- <img src = "images/10_checked.png"> -->
+                    <img src = "images/10.png">
+                </label>
+                <label id = "q1" for = "8">
+                    <input type = "radio" id = "8" name = "sleep" value=2> 
+                    <!-- <img src = "images/8_checked.png"> -->
+                    <img src = "images/8.png">
+                </label>
+                <label id = "q1" for = "5">
+                    <input type = "radio" id = "5" name = "sleep" value=3> 
+                    <!-- <img src = "images/5_checked.png"> -->
+                    <img src =  "images/5.png">
+                </label>
+                <label id = "q1" for = "We_dont_talk_about_it">
+                    <input type = "radio" id = "We_dont_talk_about_it" name = "sleep" value=4> 
+                    <!-- <img src = "images/We dont talk about it_checked.png"> -->
+                    <img src = "images/We dont talk about it.png">
+                </label>
+            </div>
+            <h2>What Music Do You Listen To?</h2>
+            <div class = "secondQ">
+                <label id = "q2" for = "beatles">
+                    <input type = "radio" id = "beatles" name = "music" value=1> 
+                    <!-- <img src = "images/10_checked.png"> -->
+                    <img src = "images/10.png">
+                </label>
+                <label id = "q2" for = "khalid">
+                    <input type = "radio" id = "khalid" name = "music" value=2> 
+                    <!-- <img src = "images/8_checked.png"> -->
+                    <img src = "images/8.png">
+                </label>
+                <label id = "q2" for = "ASAP">
+                    <input type = "radio" id = "ASAP" name = "music" value=3> 
+                    <!-- <img src = "images/5_checked.png"> -->
+                    <img src =  "images/5.png">
+                </label>
+                <label id = "q2" for = "a_void">
+                    <input type = "radio" id = "a_void" name = "music" value=4> 
+                    <!-- <img src = "images/We dont talk about it_checked.png"> -->
+                    <img src = "images/We dont talk about it.png">
+                </label>
+            </div>
+            <h2>Where did you get your last meal?</h2>
+            <div class = "thirdQ">
+                <label id = "q3" for = "collis">
+                    <input type = "radio" id = "collis" name = "food" value=1> 
+                    <img src = "images/10.png">
+                </label>
+                <label id = "q3" for = "hop">
+                    <input type = "radio" id = "hop" name = "food" value=2> 
+                    <img src = "images/8.png">
+                </label>
+                <label id = "q3" for = "novack">
+                    <input type = "radio" id = "novack" name = "food" value=3> 
+                    <img src =  "images/5.png">
+                </label>
+                <label id = "q3" for = "lol @ food">
+                    <input type = "radio" id = "lol @ food" name = "food" value=4> 
+                    <!-- <img src = "images/We dont talk about it_checked.png"> -->
+                    <img src = "images/We dont talk about it.png">
+                </label>
+            </div>
+ 
         </form>
+        <div id="warning">Please complete all the questions before hitting submit!</div>
+        <div id="submit"><button>Submit</button></div>
+        <div id = "results">
+            <div id = "result">
+                <div class = "resultGif" id = "lazy"><img></div>
+                <div class = "resultGif" id = "healthy"></div>
+                <div class = "resultGif" id = "hardo"></div>
+                <div class = "resultGif" id = "sadboi"></div>
+            </div>
+            
+
+        </div>
 
         <script src="main.js"></script>
     </body>
