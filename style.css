@@ -25,6 +25,21 @@ h2 {
 img {
  padding: 10px;  
 }
+.container {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+#collis, #hop, #novack, #lol {
+    text-align: center; 
+    text-decoration: none; 
+
+    font-size: 25px; 
+    padding: 20px; 
+    
+}
+
 #firstQ {
     text-align: center; 
     
@@ -36,13 +51,23 @@ img {
     text-align: center; 
 }
 
+#fourthQ {
+    text-align: center; 
+}
+
+#fifthQ {
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+}
+
 img:not(#result_img):hover {
     /* border: 10px solid #285FEC; */
     box-shadow: 5px 5px 8px rgb(46, 46, 46);
     cursor: pointer;
 }
 
-input[type=radio]:checked ~img {
+input[type=radio]:checked ~img{
     border: 10px solid #285FEC;
 
 }
@@ -56,6 +81,7 @@ input[type=radio] {
     display: flex;
     justify-content: center; 
     padding-top: 10px; 
+    
 }
 
 button {
@@ -69,13 +95,37 @@ button {
     transition: all .1s linear;
 }
 
-button:hover {
-    background: #285FEC;
+button:active {
+    background-color: #285FEC;
+}
+
+button:focus{
+    background-color: #285FEC;
+}
+:target {
+    color:  #285FEC;
+}
+
+.question_button {
+    display: flex; 
+    padding: 40px 30px; 
+    margin: 0px 10px; 
+    border: 1px solid black;
+    background: white;
+    color:black;
+}
+
+.question_button:hover {
+    box-shadow: 5px 5px 8px rgb(46, 46, 46);
+}
+input[type=radio]:checked ~.question_button{
+    border: 10px solid #285FEC;
+
 }
 
 #warning  {
     display: none;
     justify-content: center;
     color: rgb(241, 81, 82);
-  }
+}
 
