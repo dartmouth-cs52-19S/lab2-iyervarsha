@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     function addBorder() {
+        document.getElementById("container").style.transition("all .2s linear");
         document.getElementById("container").style.addBorder("10px solid #285FEC");
     }
     // Dynamically Loading Data 
@@ -40,6 +41,42 @@ $(document).ready(function(){
         let description;
 
         // If the quiz is filled out
+        if (choices.length < 5) {
+            result = "WARNING";
+            description = "Are You Sure You Didn't Miss a Question?"
+            document.getElementById('modal-text').innerHTML += result;
+            document.getElementById('modal-description').innerHTML += description;
+
+            // https://www.w3schools.com/howto/howto_css_modals.asp
+
+            // Get the modal
+            var modal = document.getElementById('results');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("submit");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal 
+                modal.style.display = "flex";
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                document.getElementById('modal-text').innerHTML = "";
+                document.getElementById('modal-description').innerHTML = "";
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    document.getElementById('modal-text').innerHTML = "";
+                    document.getElementById('modal-description').innerHTML = "";
+                    modal.style.display = "none";
+                }
+            }
+            
+        }
         if (choices.length == 5) {
             for (var i = 0; i < choices.length; i++){
                 total += JSON.parse(choices[i]);
@@ -126,9 +163,12 @@ $(document).ready(function(){
                 }
             }
         }
-        else {
-            $("#warning").css("display", "flex");
-        }
+        // else {
+        //     result = "WARNING";
+        //     description = "Did You Answer All of the Questions?";
+        //     document.getElementById('modal-text').innerHTML += result;
+        //     $("#warning").css("display", "flex");
+        // }
 
 
       });

@@ -6,9 +6,14 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <div id = "Landing-Background">
         <div class = "quizName">
-            <h1>What Kind of Varsha Are You?</h1>
+            <h1 id = "Landing-Title">What Kind of Varsha Are You?</h1>
+            <a id = "start" href = "#form">START</a>
         </div>
+
+        </div>
+       
         
         <form id = "form">
             <h2 id = "question1_name">How Many Hours of Sleep Do You Get On an Average Day?</h2>
@@ -57,7 +62,7 @@
             <div id = "thirdQ" class = "questions">
                 <label id = "q3" for = "funky fresh">
                     <div class = "container">
-                        <input type = "radio" id = "funky fresh" name = "word" value=3>
+                        <input type = "radio" id = "funky fresh" name = "word" value=3 onClick="addBorder">
                         <img src = "images/Background.png">
                         <p class = "image-text">"Fun and Fresh"</p>
                     </div>
@@ -65,7 +70,7 @@
                 </label>
                 <label id = "q3" for = "snacc and a half">
                     <div class = "container">
-                        <input type = "radio" id = "snacc and a half" name = "word" value=1> 
+                        <input type = "radio" id = "snacc and a half" name = "word" value=1 onClick="addBorder"> 
                         <img src = "images/Background.png">
                         <p class = "image-text">"Snacc and a Half"</p>
                     </div>
@@ -73,7 +78,7 @@
                 </label>
                 <label id = "q3" for = "zooming">
                     <div class = "container">
-                        <input type = "radio" id = "zooming" name = "word" value=2> 
+                        <input type = "radio" id = "zooming" name = "word" value=2 onClick="addBorder"> 
                         <img src = "images/Background.png">
                         <p class = "image-text">"Zooming"</p>
                     </div>
@@ -81,7 +86,7 @@
                 </label>
                 <label id = "q3" for = "I hate words">
                     <div class = "container">
-                        <input type = "radio" id = "I hate words" name = "word" value=4> 
+                        <input type = "radio" id = "I hate words" name = "word" value=4 onClick="addBorder"> 
                         <img src = "images/Background.png">
                         <p class = "image-text">"I hate words"</p>
                     </div>
@@ -141,7 +146,17 @@
             </div>
         </label>
     </div>
-    <div id="warning">Have You Answered All of the Questions?</div>
+     <!-- The Modal -->
+     <!-- <div id="warnings" class="warnings"> -->
+            <!-- Modal content --> 
+            <!-- <div class="warning">
+                <span class="close">&times;</span>
+                <p></p>
+                <h2 id = "modal-text">Have You Answered All of the Questions?</h2>
+            
+            </div>
+    </div> -->
+    <!-- <div id="warning">Have You Answered All of the Questions?</div> -->
     <div class = "submit-container">
         <button id = "submit">SUBMIT</button>
     </div>

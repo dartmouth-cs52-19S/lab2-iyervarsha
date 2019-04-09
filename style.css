@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -5,14 +8,38 @@ body{
     font-family: 'Chewy', cursive;
     
 }
-.quizName {
-    padding: 20px; 
+#Landing-Background {
     display: flex;
-    text-align: center;  
-    justify-content: center; 
-    font-size: 40px; 
+    background-color: #FFA3CB;
     background-image: url(images/What\ Type\ of\ Varsha\ Are\ You_.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.quizName {
+    width: 100%;
+    padding: 35px;
+    text-align: center;  
+    font-size: 43px; 
     color: #285FEC; 
+    -webkit-animation: color-change 1.5s infinite;
+}
+@-webkit-keyframes color-change {
+    0% { color:#285FEC; }
+    50% { color: #ffd6e8; }
+    100% { color: blue; }
+}
+
+#start {
+    color: #285FEC; 
+    border: 10px solid #285FEC;
+    padding: 10px; 
+    font-size: 50px;
+    text-decoration:none;
+}
+#start:hover{
+    border: 10px solid #ffd6e8;
+    color: #ffd6e8;
 }
 
 h2 {
@@ -50,25 +77,30 @@ img {
 }
 #secondQ {
     text-align: center; 
+   
 }
 #thirdQ {
     text-align: center; 
-    flex-flow: row wrap;
+   
 }
 
 #fourthQ {
     text-align: center; 
+   
 }
 
 
 /* HOW TO DISPLAY THIS IN ONE LINE WITHOUT USING FLEXBOX - DYNAMIC SIZING NOT WORKING*/
 #thirdQ {
     display: flex;
+    padding: 40px; 
     justify-content: center;
     text-align: center; 
+    flex-flow: row wrap;
 }
 #fifthQ {
     text-align: center; 
+    padding: 40px; 
     display: flex;
     flex-flow: row wrap;
     flex-direction: row;
@@ -77,9 +109,9 @@ img {
 }
 
 img:not(#result_img):hover {
-    /* border: 10px solid #285FEC; */
     box-shadow: 5px 5px 8px rgb(46, 46, 46);
     cursor: pointer;
+    transition: all .2s linear;
 }
 
 .questions {
@@ -118,7 +150,7 @@ button {
     font: inherit;
     margin: 0;
     padding: 15px 30px;
-    transition: all .1s linear;
+    transition: all .2s linear;
 }
 
 button:hover{
