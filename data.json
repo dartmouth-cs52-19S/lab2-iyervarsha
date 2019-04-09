@@ -1,0 +1,39 @@
+{
+    "title": "Buzzfeed Quiz: What Varsha Are You?",
+    "outcomes": {
+            "outcome1": {"img": "img/outcome1.jpg", "text": "You got lazy Varsha!"},
+            "outcome2": {"img": "img/outcome2.jpg", "text": "You got healthy Varsha!"},
+            "outcome3": {"img": "img/outcome3.jpg", "text": "You got hardo Varsha!"},
+            "outcome4": {"img": "img/outcome4.jpg", "text": "You got sadboi Varsha!"}
+    },
+    "questions": [
+        {
+            "question_name": "How Many Hours of Sleep Do You Get On an Average Day?",
+            "question_img_url": "img/question1.jpg",
+            "answers": [
+                {
+                    "text": "",
+                    "img_url": "img/image1.jpg",
+                    "outcome": "outcome2"
+                },
+                {
+                    "text": "",
+                    "img_url": "img/image2.jpg",
+                    "outcome": "outcome2"
+                },
+                {
+                    "text": "",
+                    "img_url": "img/image3.jpg",
+                    "outcome": "outcome1"
+                }
+
+            ]
+        }
+
+
+
+
+
+
+    ]
+}

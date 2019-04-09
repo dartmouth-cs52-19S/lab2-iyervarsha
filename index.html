@@ -10,31 +10,27 @@
             <h1>What Kind of Varsha Are You?</h1>
         </div>
         
-        <form>
-            <h2>How Many Hours of Sleep Do You Get On an Average Day?</h2>
+        <form id = "form">
+            <h2 id = "question1_name">How Many Hours of Sleep Do You Get On an Average Day?</h2>
             <div id = "firstQ" class = "questions">
                 <label id = "q1" for = "10">
                     <input type = "radio" id = "10" name = "sleep" value=1> 
-                    <!-- <img src = "images/10_checked.png"> -->
                     <img src = "images/10.png">
                 </label>
                 <label id = "q1" for = "8">
                     <input type = "radio" id = "8" name = "sleep" value=2> 
-                    <!-- <img src = "images/8_checked.png"> -->
                     <img src = "images/8.png">
                 </label>
                 <label id = "q1" for = "5">
                     <input type = "radio" id = "5" name = "sleep" value=3> 
-                    <!-- <img src = "images/5_checked.png"> -->
                     <img src =  "images/5.png">
                 </label>
                 <label id = "q1" for = "We_dont_talk_about_it">
                     <input type = "radio" id = "We_dont_talk_about_it" name = "sleep" value=4> 
-                    <!-- <img src = "images/We dont talk about it_checked.png"> -->
                     <img src = "images/We dont talk about it.png">
                 </label>
             </div>
-            <h2>Favorite Artist Out of These People?</h2>
+            <h2 id = "question2_name">Favorite Artist Out of These People?</h2>
             <div id = "secondQ" class = "questions">
                 <label id = "q2" for = "beatles">
                     <input type = "radio" id = "beatles" name = "music" value=1> 
@@ -57,30 +53,46 @@
                     <img src = "images/Void.png">
                 </label>
             </div>
-            <h2>Which of These Phrases Do you Like?</h2>
+            <h2 id = "question3_name">Which of These Phrases Do you Like?</h2>
             <div id = "thirdQ" class = "questions">
                 <label id = "q3" for = "funky fresh">
-                    <input type = "radio" id = "funky fresh" name = "word" value=3> 
-                    <p>"Fun and Fresh"</p>
+                    <div class = "container">
+                        <input type = "radio" id = "funky fresh" name = "word" value=3>
+                        <img src = "images/Background.png">
+                        <p class = "image-text">"Fun and Fresh"</p>
+                    </div>
+                   
                 </label>
                 <label id = "q3" for = "snacc and a half">
-                    <input type = "radio" id = "snacc and a half" name = "word" value=1> 
-                    <p>"Snacc and a Half"</p>
+                    <div class = "container">
+                        <input type = "radio" id = "snacc and a half" name = "word" value=1> 
+                        <img src = "images/Background.png">
+                        <p class = "image-text">"Snacc and a Half"</p>
+                    </div>
+                  
                 </label>
                 <label id = "q3" for = "zooming">
-                    <input type = "radio" id = "zooming" name = "word" value=2> 
-                    <p>"Zooming"</p>
+                    <div class = "container">
+                        <input type = "radio" id = "zooming" name = "word" value=2> 
+                        <img src = "images/Background.png">
+                        <p class = "image-text">"Zooming"</p>
+                    </div>
+                    
                 </label>
                 <label id = "q3" for = "I hate words">
-                    <input type = "radio" id = "I hate words" name = "word" value=4> 
-                    <p>"I hate words"</p>
+                    <div class = "container">
+                        <input type = "radio" id = "I hate words" name = "word" value=4> 
+                        <img src = "images/Background.png">
+                        <p class = "image-text">"I hate words"</p>
+                    </div>
+                    
                 </label>
             </div>
         </div>
-        <h2>Which Brooklyn Nine-Nine Character Are You Relating To?</h2>
+        <h2 id = "question4_name">Which Brooklyn Nine-Nine Character Are You Relating To?</h2>
         <div id = "fourthQ" class = "questions">
             <label id = "q4" for = "Amy">
-                <input type = "radio" id = "Amy" name = "b99" value=3> 
+                <input  type = "radio" id = "Amy" name = "b99" value=3> 
                 <img src = "images/Amy.png">
             </label>
             <label id = "q4" for = "Jake">
@@ -97,46 +109,65 @@
             </label>
         </div>
     </div>
-        <h2>Where did you get your last meal?</h2>
-        <div id = "fifthQ" class = "questions">
-            <label id = "q5" for = "collis">
-                <input type = "radio" id = "collis" name = "food" value=1> 
-                <div class = "container">
-                    <button class = question_button type="button">"Collis, Baby - Are u mad?"</button>
-                </div>
-            </label>
-            <label id = "q5" for = "hop">
-                <input type = "radio" id = "hop" name = "food" value=2> 
-                <div class = "container">
-                    <button class = question_button type="button">"Hopped 'till I dropped"</button>
-                </div>
-            </label>
-            <label id = "q5" for = "novack">
-                <input type = "radio" id = "novack" name = "food" value=3> 
-                <div class = "container">
-                    <button class = question_button type="button">"Yeeted some Novack"</button>
-                </div>
-            </label>
-            <label id = "q5" for = "lol @ food">
-                <input type = "radio" id = "lol @ food" name = "food" value=4> 
-                <div class = "container">  
-                    <button class = question_button type="button">"lol what iz food"</button>
-                </div>
-            </label>
+    <h2 id = "question5_name">Where did you get your last meal?</h2>
+    <div id = "fifthQ" class = "questions">
+        <label id = "q5" for = "collis">
+            <div id = "container" class = "container">
+                    <input type = "radio" id = "collis" name = "food" value=1 onClick="addBorder">
+                    <img class = "text-image" src = "images/Background.png">
+                    <p class = "image-text">"Collis, Baby - U Mad?"</p>
+            </div>
+        </label>
+        <label id = "q5" for = "hop">
+            <div id = "container" class = "container">
+                <input type = "radio" id = "hop" name = "food" value=2 onClick="addBorder"> 
+                <img class = "text-image" src = "images/Background.png">
+                <p class = "image-text">"Hopped 'till I dropped"</p>
+            </div>
+        </label>
+        <label id = "q5" for = "novack"> 
+            <div id = "container" class = "container">
+                <input type = "radio" id = "novack" name = "food" value=3 onClick="addBorder"> 
+                <img class = "text-image" src = "images/Background.png">
+                <p class = "image-text">"Yeeted some Novack"</p>
+            </div>
+        </label>
+        <label id = "q5" for = "lolatfood">
+            
+            <div id = "container" class = "container"> 
+                <input type = "radio" id = "lolatfood" name = "food" value=4 onClick="addBorder">  
+                <img class = "text-image" src = "images/Background.png">
+                <p class = "image-text">"Lmao what iz food"</p>
+            </div>
+        </label>
+    </div>
+    <div id="warning">Have You Answered All of the Questions?</div>
+    <div class = "submit-container">
+        <button id = "submit">SUBMIT</button>
+    </div>
+        </form>
+
+    <!-- The Modal -->
+    <div id="results" class="results">
+            <!-- Modal content --> 
+            <div class="result">
+                <span class="close">&times;</span>
+                <p>YOU GOT...</p>
+                <h2 id = "modal-text"></h2>
+                <p id = "modal-description"></p>
+                <img class = "modal-image-hide" id = "lazy" src = "images/Lazy_Varsha.png">
+                <img class = "modal-image-hide" id = "healthy" src = "images/Healthy_Varsha.png">
+                <img class = "modal-image-hide" id = "hardo" src = "images/Hardo_Varsha.png">
+                <img class = "modal-image-hide" id = "sadboi"src = "images/Sadboi_Varsha.png">
+            </div>
     </div>
 
-        </form>
-        <div id="warning">Please complete all the questions before hitting submit!</div>
-        <div id="submit"><button>SUBMIT</button></div>
-        <div id = "results">
-            <div id = "result">
-                <div class = "resultGif" id = "lazy"><img></div>
-                <div class = "resultGif" id = "healthy"></div>
-                <div class = "resultGif" id = "hardo"></div>
-                <div class = "resultGif" id = "sadboi"></div>
-            </div>
-        </div>
 
+        <!-- loads JQuery Library -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
         <script src="main.js"></script>
     </body>
 
