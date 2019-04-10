@@ -13,6 +13,8 @@ I wrote a buzzfeed quiz based on what type of Varsha someone is: lazy varsha, he
 I really liked using flexbox and I think I've gottem a hang of it over the past two labs. 
 #### Styling
 I had a lot of fun styling these quizzes. It's pretty rare to get to design websites that are funny. I liked using a brigher color scheme. 
+### This
+Using "this" was very challenging for me, but I ended up figuring it out for my opacity function. I was pretty proud of that part. 
 
 
 ### What didn’t work.

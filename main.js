@@ -1,3 +1,26 @@
+// Opacity Function
+// https://www.w3schools.com/jquery/eff_animate.asp
+$('label#q1').click(function() {
+    $('label#q1').not(this).stop().animate({opacity: 0.7}, 200);
+    $(this).stop().animate({opacity: 1.0}, 300);
+ });
+ $('label#q2').click(function() {
+    $('label#q2').not(this).stop().animate({opacity: 0.7}, 200);
+    $(this).stop().animate({opacity: 1.0}, 300);
+ });
+ $('label#q3').click(function() {
+    $('label#q3').not(this).stop().animate({opacity: 0.7}, 200);
+    $(this).stop().animate({opacity: 1.0}, 300);
+ });
+ $('label#q4').click(function() {
+    $('label#q4').not(this).stop().animate({opacity: 0.7}, 200);
+    $(this).stop().animate({opacity: 1.0}, 300);
+ });
+ $('label#q5').click(function() {
+    $('label#q5').not(this).stop().animate({opacity: 0.7}, 200);
+    $(this).stop().animate({opacity: 1.0}, 300);
+ });
+
 function addBorder() {
     document.getElementById("container").style.transition("all .2s linear");
     document.getElementById("container").style.addBorder("10px solid #285FEC");
