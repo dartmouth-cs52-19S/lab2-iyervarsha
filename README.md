@@ -9,6 +9,19 @@ Linking this at the bottom allows the web page and HTML content to load before e
 ## Description of what you did
 I wrote a buzzfeed quiz based on what type of Varsha someone is: lazy varsha, healthy varsha, hardo varsha, and sadboi varsha. I chose the 2nd option for the choose your own adventure. I calculated my results by using numerical values and selecting the "type of varsha" according to the sum of the checkbox values.
 ### What worked 
+#### Flexbox
+I really liked using flexbox and I think I've gottem a hang of it over the past two labs. 
+#### Styling
+I had a lot of fun styling these quizzes. It's pretty rare to get to design websites that are funny. I liked using a brigher color scheme. 
+
+
+### What didn’t work.
+#### JSON
+I tried for a while to get the JSON file to work, but didn't have enough time to finish this portion. 
+
+### Special Things to Point Out :
+#### Paralax Scrolling
+The Landing Page has some paralax Scrolling that you can see when you click on the button. 
 #### Made Some Components on Figma!
 I made my landing page on figma. I also made some of my pictures on Figma as well (such as the ones in the first question).
 #### Transformations/ Animations
@@ -18,10 +31,4 @@ When you click start, the page scrolls down.
 #### Flashing Text
 On my landing page, I got my header to flash different colors. 
 #### Modals
-Made my modals slide down. 
-
-
-### What didn’t work.
-#### JSON
-I tried for a while to get the JSON file to work, but didn't have enough time to finish this portion. 
-
+Made my modals slide down when animating. 
