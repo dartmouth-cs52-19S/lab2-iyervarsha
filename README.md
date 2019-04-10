@@ -23,12 +23,17 @@ I tried for a while to get the JSON file to work, but didn't have enough time to
 #### Paralax Scrolling
 The Landing Page has some paralax Scrolling that you can see when you click on the button. 
 #### Made Some Components on Figma!
+![White_noise](https://user-images.githubusercontent.com/33734566/55849717-ac0a9800-5b1f-11e9-8060-41ee87d21a19.png)
 I made my landing page on figma. I also made some of my pictures on Figma as well (such as the ones in the first question).
 #### Transformations/ Animations
 My buttons animate when you hover and click on them. The hover animation is a fade while the clicking animation is a border. I made the textboxes animate with java script and I made the images animate with CSS. 
+<img width="796" alt="Screen Shot 2019-04-09 at 11 30 32 PM" src="https://user-images.githubusercontent.com/33734566/55849738-b9278700-5b1f-11e9-8165-10d32adbb826.png">
 #### Smooth Scrolling for Landing Page
 When you click start, the page scrolls down. 
 #### Flashing Text
-On my landing page, I got my header to flash different colors. 
+On my landing page, I got my header to flash different colors.
+<img width="1185" alt="Screen Shot 2019-04-09 at 11 30 22 PM" src="https://user-images.githubusercontent.com/33734566/55849726-b0cf4c00-5b1f-11e9-89fa-8389db3e6592.png">
 #### Modals
 Made my modals slide down when animating. 
+
+<img width="1122" alt="Screen Shot 2019-04-09 at 11 30 46 PM" src="https://user-images.githubusercontent.com/33734566/55849734-b5940000-5b1f-11e9-8503-9df91f381432.png">
