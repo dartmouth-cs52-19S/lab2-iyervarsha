@@ -89,8 +89,6 @@ img {
    
 }
 
-
-/* HOW TO DISPLAY THIS IN ONE LINE WITHOUT USING FLEXBOX - DYNAMIC SIZING NOT WORKING*/
 #thirdQ {
     display: flex;
     padding: 40px; 
